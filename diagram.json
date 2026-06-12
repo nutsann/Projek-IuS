@@ -3,7 +3,13 @@
   "author": "Kelompok 2 IUS",
   "editor": "wokwi",
   "parts": [
-    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -28.8, "left": -129.56, "attrs": {} },
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": -115.2,
+      "left": -254.36,
+      "attrs": {}
+    },
     {
       "type": "wokwi-hc-sr04",
       "id": "ultra",
