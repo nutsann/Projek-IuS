@@ -6,37 +6,99 @@
     {
       "type": "board-esp32-devkit-c-v4",
       "id": "esp",
-      "top": -115.2,
-      "left": -254.36,
+      "top": 0,
+      "left": 0,
       "attrs": {}
     },
     {
       "type": "wokwi-hc-sr04",
       "id": "ultra",
-      "top": -110,
-      "left": 260,
-      "attrs": { "distance": "25" }
+      "top": -80,
+      "left": 360,
+      "attrs": {
+        "distance": "30"
+      }
     },
     {
       "type": "wokwi-rgb-led",
       "id": "rgb1",
-      "top": 263.2,
-      "left": 337.1,
-      "attrs": { "common": "cathode" }
+      "top": 120,
+      "left": 390,
+      "attrs": {
+        "common": "cathode"
+      }
     },
-    { "type": "wokwi-buzzer", "id": "bz1", "top": 232.8, "left": 136.2, "attrs": {} }
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": 300,
+      "left": 400,
+      "attrs": {
+        "volume": "0.2"
+      }
+    }
   ],
   "connections": [
-    [ "esp:5V", "ultra:VCC", "red", [] ],
-    [ "esp:GND.1", "ultra:GND", "black", [] ],
-    [ "esp:5", "ultra:TRIG", "green", [] ],
-    [ "esp:18", "ultra:ECHO", "yellow", [] ],
-    [ "esp:25", "rgb1:R", "red", [] ],
-    [ "esp:26", "rgb1:G", "green", [] ],
-    [ "esp:27", "rgb1:B", "blue", [] ],
-    [ "esp:GND.2", "rgb1:COM", "black", [] ],
-    [ "esp:19", "bz1:1", "purple", [] ],
-    [ "esp:GND.3", "bz1:2", "black", [] ]
+    [
+      "esp:5V",
+      "ultra:VCC",
+      "red",
+      []
+    ],
+    [
+      "esp:GND.1",
+      "ultra:GND",
+      "black",
+      []
+    ],
+    [
+      "esp:33",
+      "ultra:TRIG",
+      "green",
+      []
+    ],
+    [
+      "esp:32",
+      "ultra:ECHO",
+      "blue",
+      []
+    ],
+    [
+      "esp:25",
+      "rgb1:R",
+      "red",
+      []
+    ],
+    [
+      "esp:26",
+      "rgb1:G",
+      "green",
+      []
+    ],
+    [
+      "esp:27",
+      "rgb1:B",
+      "blue",
+      []
+    ],
+    [
+      "esp:GND.2",
+      "rgb1:COM",
+      "black",
+      []
+    ],
+    [
+      "esp:14",
+      "bz1:1",
+      "purple",
+      []
+    ],
+    [
+      "esp:GND.3",
+      "bz1:2",
+      "black",
+      []
+    ]
   ],
   "dependencies": {}
 }
